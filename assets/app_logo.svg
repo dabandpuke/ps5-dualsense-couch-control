@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="256" y1="28" x2="256" y2="484" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#272732"/>
+      <stop offset="55%" stop-color="#15151C"/>
+      <stop offset="100%" stop-color="#0B0B10"/>
+    </linearGradient>
+    <linearGradient id="rimGrad" x1="256" y1="28" x2="256" y2="484" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#626478" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#2E2E3B" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1E1E28" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="shellGrad" x1="256" y1="152" x2="256" y2="366" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#565868"/>
+      <stop offset="48%" stop-color="#333542"/>
+      <stop offset="100%" stop-color="#1C1D26"/>
+    </linearGradient>
+    <linearGradient id="padGrad" x1="256" y1="160" x2="256" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3E4052"/>
+      <stop offset="100%" stop-color="#222330"/>
+    </linearGradient>
+    <linearGradient id="indigoGlow" x1="186" y1="162" x2="326" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <filter id="lightbarBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Obsidian Squircle Badge -->
+  <rect x="28" y="28" width="456" height="456" rx="112" fill="url(#bgGrad)" stroke="url(#rimGrad)" stroke-width="3"/>
+
+  <!-- Shoulder Bumpers -->
+  <path d="M142 162 C150 150, 174 148, 186 156" stroke="#454756" stroke-width="6" stroke-linecap="round"/>
+  <path d="M370 162 C362 150, 338 148, 326 156" stroke="#454756" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- DualSense Inner Core Chassis -->
+  <path d="M168 258 L344 258 L366 346 C356 354, 344 344, 334 322 L316 286 L196 286 L178 322 C168 344, 156 354, 146 346 Z" fill="#14141B"/>
+
+  <!-- DualSense Main Sculpted Shell -->
+  <path d="M188 164
+           C156 166, 136 176, 126 202
+           L106 276
+           C98 310, 108 346, 132 354
+           C148 358, 160 344, 172 316
+           L190 282
+           C196 274, 206 272, 218 272
+           L294 272
+           C306 272, 316 274, 322 282
+           L340 316
+           C352 344, 364 358, 380 354
+           C404 346, 414 310, 406 276
+           L386 202
+           C376 176, 356 166, 324 164
+           Z"
+        fill="url(#shellGrad)" stroke="#6B6E82" stroke-width="2"/>
+
+  <!-- Glowing Indigo Lightbar Seam -->
+  <path d="M192 168 L202 224 C204 233, 212 238, 222 238 L290 238 C300 238, 308 233, 310 224 L320 168"
+        stroke="url(#indigoGlow)" stroke-width="5.5" stroke-linecap="round" filter="url(#lightbarBlur)"/>
+
+  <!-- Center Touchpad Surface -->
+  <path d="M196 162 C236 158, 276 158, 316 162 L307 220 C305 228, 299 233, 290 233 L222 233 C213 233, 207 228, 205 220 Z"
+        fill="url(#padGrad)" stroke="#7B83EB" stroke-width="1.5"/>
+
+  <!-- D-Pad Minimalist Cutouts -->
+  <rect x="150" y="192" width="14" height="16" rx="3" fill="#181920"/>
+  <rect x="150" y="222" width="14" height="16" rx="3" fill="#181920"/>
+  <rect x="134" y="208" width="16" height="14" rx="3" fill="#181920"/>
+  <rect x="164" y="208" width="16" height="14" rx="3" fill="#181920"/>
+
+  <!-- Action Button Minimalist Cutouts -->
+  <circle cx="354" cy="196" r="8.5" fill="#181920"/>
+  <circle cx="354" cy="232" r="8.5" fill="#181920"/>
+  <circle cx="336" cy="214" r="8.5" fill="#181920"/>
+  <circle cx="372" cy="214" r="8.5" fill="#181920"/>
+
+  <!-- Twin Symmetrical Analog Sticks -->
+  <circle cx="212" cy="256" r="17" fill="#1B1C24" stroke="#3E4050" stroke-width="2.5"/>
+  <circle cx="212" cy="256" r="11" fill="#252733"/>
+  <circle cx="300" cy="256" r="17" fill="#1B1C24" stroke="#3E4050" stroke-width="2.5"/>
+  <circle cx="300" cy="256" r="11" fill="#252733"/>
+
+  <!-- Crisp Precision Desktop Cursor Arrow on Touchpad -->
+  <path d="M245 175 L249 214 L257 206 L264 218 L270 214 L263 202 L274 200 Z"
+        fill="#F4F4F5"/>
+</svg>
